@@ -5,12 +5,12 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="http://Duduanwangu.github.io">
   <title>Duduanwangu&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Duduanwangu&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://Duduanwangu.github.io/index.html">
 <meta property="og:site_name" content="Duduanwangu&#39;s blog">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,8 @@
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Duduanwangu</a></h1>
 		</hgroup>
+		
+		<p class="header-subtitle">你相信的故事，就是你的选择</p>
 		
 
 		<nav class="header-menu">
@@ -103,6 +105,8 @@
 			  <h1 class="header-author js-header-author">Duduanwangu</h1>
 			</hgroup>
 			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>你相信的故事，就是你的选择<i class="icon icon-quo-right"></i></p>
+			
 			
 			
 				
@@ -146,40 +150,31 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-hello" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-hexo-github" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/21/hello/">Hello</a>
+      <a class="article-title" href="/posts/59327a55/">使用 hexo + github pages 搭建个人博客</a>
     </h1>
   
 
         
-        <a href="/2019/08/21/hello/" class="archive-article-date">
-  	<time datetime="2019-08-21T10:25:17.271Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-21</time>
+        <a href="/posts/59327a55/" class="archive-article-date">
+  	<time datetime="2019-08-22T10:44:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1. 前言"></a>1. 前言</h1><hr>
+<p>最近想用博客来记录一下自己的学习过程，以前都是用有道云记笔记，每次查看笔记都需要登录，而且笔记仅自己可见。因此，用博客记笔记是个不错的选择，它不仅有一个好看的界面，而且能用浏览器随时访问，很方便。最重要的一点是它能被更多的人看到，如果你写的东西正好对别人有帮助，你会发现这将是一件很有成就感的事。大家都知道，学习最好的方法就是一个输入和输出的过程，如果只有输入而没有输出，是永远学不好的，而博客恰好是一种很好的输出工具。我们在写博客的时候其实就是在给别人讲解的过程，只有给别人讲清楚了，我们才真正学会了。好吧~ 扯远了，回归正题，那究竟用什么博客好呢？我观察了一下网上的各大博客平台，像CSDN、博客园和简书等都是不错的平台，但是我不喜欢，因为广告很烦人，界面不好看。那么只剩下两种方法了，自己搭建一个博客网站和用 github 搭建博客网站（其实还有一种方法就是你可以注册一个公众号来记录自己的学习过程，感兴趣的同学也可以尝试下）。自己搭建一个博客网站的话对于学生的我来说成本太高，虽然网上有很多博客模板，但是我觉得太浪费时间了，所以直接 pass 掉。当然，感兴趣的同学可以自行尝试，我这里主要介绍第二种方法，用 github 搭建个人博客。那为什么用它呢？大家应该都知道 github 是全球最大的同性交友网站，也是每个程序猿必备的网站，上面有很多优秀的开源项目值得我们学习，所以选他准没错啦。并且用 github 搭建博客的好处就是不用花一分钱就可以搭建一个自由的个人博客，不需要什么服务器也不需要什么后台，博客内容也可以轻松打包，发布到其它平台。好了，废话不多说，接下来就让我们一起用 github 搭建我们的个人博客。</p>
+        
+          <a class="article-more-a" href="/posts/59327a55/#more">more >></a>
+        
       
 
       
@@ -192,7 +187,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
         		</li>
       		
 		</ul>
@@ -202,7 +201,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/21/hello/">展开全文 >></a>
+          <a class="article-more-a" href="/posts/59327a55/">展开全文 >></a>
         </p>
       
 
@@ -239,12 +238,12 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/19/hello-world/">Hello World</a>
+      <a class="article-title" href="/posts/undefined/">Hello World</a>
     </h1>
   
 
         
-        <a href="/2019/08/19/hello-world/" class="archive-article-date">
+        <a href="/posts/undefined/" class="archive-article-date">
   	<time datetime="2019-08-19T14:54:21.553Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-19</time>
 </a>
         
@@ -256,16 +255,9 @@
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        
+          <a class="article-more-a" href="/posts/undefined/#more">more >></a>
+        
       
 
       
@@ -277,313 +269,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/19/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Python 十个练手项目" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/10/Python 十个练手项目/">Python 十个练手项目</a>
-    </h1>
-  
-
-        
-        <a href="/2019/08/10/Python 十个练手项目/" class="archive-article-date">
-  	<time datetime="2019-08-10T15:09:27.522Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>学完python的基础后，似乎感觉自己什么都懂了，但似乎又什么都不懂<br>想着用python写一些东西出来，但仔细想想，发现脑子里一片空白，不<br>知道从何下手，于是想着先找一些python项目来练练手。然后就在csdn上<br>找到了十个不错的练手项目。<br>(blog地址：<a href="https://blog.csdn.net/qq_20407705/article/details/79259800" target="_blank" rel="noopener">https://blog.csdn.net/qq_20407705/article/details/79259800</a>)</p>
-        
-          <a class="article-more-a" href="/2019/08/10/Python 十个练手项目/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/10/Python 十个练手项目/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Python 开发大全、系列文章、精品教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/10/Python 开发大全、系列文章、精品教程/">Python 开发大全、系列文章、精品教程</a>
-    </h1>
-  
-
-        
-        <a href="/2019/08/10/Python 开发大全、系列文章、精品教程/" class="archive-article-date">
-  	<time datetime="2019-08-10T15:09:17.554Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>这是CSDN博客上一个大佬写的关于Python的一系列教程<br>我只有一个字：牛！大神不愧是大神，我们这种小白只有仰望的份<br>他写的内容非常详细齐全，满满的干货。<br>他博客的下方有很多人留言，都说牛！足见他写的是真的好！<br>附上blog地址：<a href="https://blog.csdn.net/luanpeng825485697/article/details/78347433" target="_blank" rel="noopener">https://blog.csdn.net/luanpeng825485697/article/details/78347433</a></p>
-        
-          <a class="article-more-a" href="/2019/08/10/Python 开发大全、系列文章、精品教程/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/10/Python 开发大全、系列文章、精品教程/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-突破之 Python 项目实战" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/10/突破之 Python 项目实战/">突破之 Python 项目实战</a>
-    </h1>
-  
-
-        
-        <a href="/2019/08/10/突破之 Python 项目实战/" class="archive-article-date">
-  	<time datetime="2019-08-10T15:09:07.476Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>最近在掘金上看到一篇不错的文章，文章说的是作者的一些编程总结和经验，还讲述了程序员写代码水平的几个发展阶段。我觉得总结的不错，很有同感，发出来给大家看看。</p>
-<p>文章连接：<a href="https://juejin.im/post/5a576e98518825734d148a00" target="_blank" rel="noopener">https://juejin.im/post/5a576e98518825734d148a00</a></p>
-        
-          <a class="article-more-a" href="/2019/08/10/突破之 Python 项目实战/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/10/突破之 Python 项目实战/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-微软出 Python 教程啦" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/10/微软出 Python 教程啦/">微软出 Python 教程啦</a>
-    </h1>
-  
-
-        
-        <a href="/2019/08/10/微软出 Python 教程啦/" class="archive-article-date">
-  	<time datetime="2019-08-10T15:08:42.445Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Python，一门很火的语言，我和她是在大二相识并相爱的。</p>
-<p>大一时我们上的是C++和谭浩强的C，当时的我完全是一个计算机小白，对计<br>算机的认识还停留在网吧开黑和看可爱日本妹子的阶段，并且认为只有网吧才<br>有这种机器，因此C究竟是什么鬼？</p>
-        
-          <a class="article-more-a" href="/2019/08/10/微软出 Python 教程啦/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/10/微软出 Python 教程啦/">展开全文 >></a>
+          <a class="article-more-a" href="/posts/undefined/">展开全文 >></a>
         </p>
       
 
@@ -702,11 +388,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
             
             <div class="clearfix"></div>
@@ -757,7 +447,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">此博主很懒~ &lt;br&gt;没有留下任何信息。&lt;br/&gt;</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">此博主很懒~ &lt;br&gt;没有留下任何信息&lt;br/&gt;</div>
   	  	
     	</section>
     

@@ -299,7 +299,7 @@
 <figure class="highlight gams"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">No</span> such <span class="keyword">file</span> <span class="keyword">or</span> directory</span><br></pre></td></tr></tbody></table></figure>
 
 <p>此时继续输入</p>
-<figure class="highlight 1c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"邮件地址"</span>  <span class="meta">#邮件地址就是你注册账户时用的邮箱</span></span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"邮件地址"</span>  <span class="comment">#邮件地址就是你注册账户时用的邮箱</span></span><br></pre></td></tr></tbody></table></figure>
 
 <p>然后连续三次回车，最终会生成一个文件在用户目录下，打开用户目录（一般在C盘），找到 <code>.ssh</code> 文件夹。</p>
 <p>进入 <code>.ssh</code> 目录找到 <code>id_rsa.pub</code> 文件，用记事本打开并复制里面的内容。然后打开你的 github 主页，点击你头像下方的 Settings，进入个人设置，接着点击 <code>SSH and GPG keys</code> –&gt; <code>New SSH key</code>(右上角一个绿色的按钮，点他创建新的ssh)。</p>
